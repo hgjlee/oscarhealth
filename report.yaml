@@ -1,0 +1,30 @@
+```yaml
+company:
+  name: Oscar Health
+  logo: Oscar_Health_image.jpg
+how_might_we: How might we enable doctors to better manage patient relaitonships between visits?
+
+product_narrative: |
+  INPUT YOUR PRODUCT NARRATIVE HERE
+team:
+  picture: TeamPhoto.JPG
+  roster:
+ - name: Xiaohang Lu 
+    email: xl672@cornell.edu 
+ - name: Marika Cusick
+    email: mmc265@cornell.edu
+ - name: Jacob Lee  
+    email: hl2278@cornell.edu
+ - name: Emily Foreman
+    email: ejf75@cornell.edu
+ - name: Max Delahanty
+    email: mmd283@cornell.edu
+
+assets:
+- title: Sprint 1
+  url: URL OF YOUR SPRINT 1 WORK/PRESENTATION
+- title: Sprint 2
+  url: URL OF YOUR SPRINT 2 WORK/PRESENTATION
+- title: Sprint 3
+  url: URL OF YOUR SPRINT 3 WORK/PRESENTATION
+```
