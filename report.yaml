@@ -1,30 +1,29 @@
-'''yaml
 company:
   name: Oscar Health
-  logo: Oscar_Health_image.jpg
-how_might_we: How might we enable doctors to better manage patient relaitonships between visits?
+  logo: Oscar_Health_Image.jpg
+how_might_we: How might we enable doctors to better manage patient relationships between visits?
 
 product_narrative: |
-  INPUT YOUR PRODUCT NARRATIVE HERE
+  Cornell Tech students build some amazing things. But it is often hard to show it to outside people.
+  With BuildBoard, we let students provide regular updates about their work and create a Web version of it.
 team:
-  picture: TeamPhoto.JPG
+  picture: TeamPhoto.jpg
   roster:
- - name: Xiaohang Lu 
-    email: xl672@cornell.edu 
- - name: Marika Cusick
+  - name: Xiaochang Lu
+    email: xl672@cornell.edu
+  - name: Marika Cusick 
     email: mmc265@cornell.edu
- - name: Jacob Lee  
+  - name: Jacob Lee 
     email: hl2278@cornell.edu
- - name: Emily Foreman
+  - name: Emily Foreman
     email: ejf75@cornell.edu
- - name: Max Delahanty
+  - name: Max Delahanty
     email: mmd283@cornell.edu
 
 assets:
 - title: Sprint 1
-  url: URL OF YOUR SPRINT 1 WORK/PRESENTATION
+  url: http://cornelltech.io/spice-up-your-personal-privacy-with-pepr/
 - title: Sprint 2
-  url: URL OF YOUR SPRINT 2 WORK/PRESENTATION
+  url: http://cornelltech.io/health-apps-on-steroids/
 - title: Sprint 3
-  url: URL OF YOUR SPRINT 3 WORK/PRESENTATION
-'''
+  url: http://cornelltech.io/storybot/
