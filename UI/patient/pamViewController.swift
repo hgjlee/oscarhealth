@@ -16,6 +16,9 @@ class pamViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func pamselected(_ sender: UIButton){
+        print(String(sender.tag))
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

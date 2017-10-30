@@ -10,11 +10,28 @@ import UIKit
 
 class historyViewController: UIViewController {
 
-    @IBOutlet weak var bgimage: UIImageView!
+    @IBOutlet weak var calendarbg: UIView!
+    @IBOutlet weak var trendsbg: UIView!
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        calendarbg.backgroundColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
+        calendarbg.layer.shadowColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1).cgColor;
+        calendarbg.layer.shadowOffset = CGSize(width: 0, height: 15)
+        calendarbg.layer.shadowOpacity = 0.5;
+        calendarbg.layer.shadowRadius = 10.0;
+        calendarbg.layer.cornerRadius = 5;
+        
+        trendsbg.backgroundColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
+        trendsbg.layer.shadowColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1).cgColor;
+        trendsbg.layer.shadowOffset = CGSize(width: 0, height: 15)
+        trendsbg.layer.shadowOpacity = 0.5;
+        trendsbg.layer.shadowRadius = 10.0;
+        trendsbg.layer.cornerRadius = 5;
+        
+      
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

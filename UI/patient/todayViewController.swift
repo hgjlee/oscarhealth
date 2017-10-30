@@ -10,7 +10,9 @@ import UIKit
 
 class todayViewController: UIViewController {
     
+    @IBOutlet weak var todaydatebg: UIView!
     @IBOutlet weak var moodbg: UIView!
+    @IBOutlet weak var todaydate: UILabel!
     @IBOutlet weak var activity: UIButton!
     
     @IBOutlet weak var medication: UIButton!
@@ -22,6 +24,8 @@ class todayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bgview.backgroundColor = UIColor.white
+        
+        todaydatebg.backgroundColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
         
         moodbg.backgroundColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
         moodbg.layer.shadowColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1).cgColor;
