@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C11B916C1FA91D32001DFB50 /* JTAppleCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11B916B1FA91D32001DFB50 /* JTAppleCalendar.framework */; };
+		C11B916D1FA91D32001DFB50 /* JTAppleCalendar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C11B916B1FA91D32001DFB50 /* JTAppleCalendar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C12E7C711FA640C8007A81BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12E7C701FA640C8007A81BB /* Assets.xcassets */; };
 		C12E7C731FA65450007A81BB /* calendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E7C721FA65450007A81BB /* calendarViewController.swift */; };
 		C12E7C751FA654BF007A81BB /* trendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E7C741FA654BF007A81BB /* trendsViewController.swift */; };
+		C15C69171FAA568300F7A741 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15C69161FAA568300F7A741 /* Charts.framework */; };
+		C15C69181FAA568300F7A741 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C15C69161FAA568300F7A741 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1610E561FAF94A900FD7D30 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1610E551FAF94A900FD7D30 /* CustomCell.swift */; };
 		C1755D211F959EB1002DE747 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1755D201F959EB1002DE747 /* AppDelegate.swift */; };
 		C1755D231F959EB1002DE747 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1755D221F959EB1002DE747 /* WelcomeViewController.swift */; };
 		C1755D261F959EB1002DE747 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1755D241F959EB1002DE747 /* Main.storyboard */; };
@@ -22,6 +27,7 @@
 		C1806E371F95A41C003FC235 /* ZLSwipeableViewSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1806E311F95A41C003FC235 /* ZLSwipeableViewSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C1806E3A1F95AB7B003FC235 /* todayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1806E391F95AB7B003FC235 /* todayViewController.swift */; };
 		C1806E3C1F95AB8E003FC235 /* historyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1806E3B1F95AB8E003FC235 /* historyViewController.swift */; };
+		C19CB6831FA9259900FB807E /* thViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19CB6821FA9259900FB807E /* thViewController.swift */; };
 		C1B1ED0A1FA41DE1008083F9 /* pamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B1ED091FA41DE1008083F9 /* pamViewController.swift */; };
 		C1B1ED0C1FA41E1C008083F9 /* activityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B1ED0B1FA41E1C008083F9 /* activityViewController.swift */; };
 		C1B1ED0E1FA41E2C008083F9 /* medicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B1ED0D1FA41E2C008083F9 /* medicationViewController.swift */; };
@@ -36,7 +42,9 @@
 			files = (
 				C1806E331F95A41C003FC235 /* FaveButton.framework in Embed Frameworks */,
 				C1806E371F95A41C003FC235 /* ZLSwipeableViewSwift.framework in Embed Frameworks */,
+				C15C69181FAA568300F7A741 /* Charts.framework in Embed Frameworks */,
 				C1806E351F95A41C003FC235 /* SnapKit.framework in Embed Frameworks */,
+				C11B916D1FA91D32001DFB50 /* JTAppleCalendar.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,9 +52,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C11B916B1FA91D32001DFB50 /* JTAppleCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JTAppleCalendar.framework; path = Carthage/Build/iOS/JTAppleCalendar.framework; sourceTree = "<group>"; };
 		C12E7C701FA640C8007A81BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C12E7C721FA65450007A81BB /* calendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarViewController.swift; sourceTree = "<group>"; };
 		C12E7C741FA654BF007A81BB /* trendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trendsViewController.swift; sourceTree = "<group>"; };
+		C15C69161FAA568300F7A741 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
+		C1610E551FAF94A900FD7D30 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		C1755D1D1F959EB1002DE747 /* patient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = patient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1755D201F959EB1002DE747 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1755D221F959EB1002DE747 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +72,8 @@
 		C1806E311F95A41C003FC235 /* ZLSwipeableViewSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZLSwipeableViewSwift.framework; path = Carthage/Build/iOS/ZLSwipeableViewSwift.framework; sourceTree = "<group>"; };
 		C1806E391F95AB7B003FC235 /* todayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todayViewController.swift; sourceTree = "<group>"; };
 		C1806E3B1F95AB8E003FC235 /* historyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyViewController.swift; sourceTree = "<group>"; };
+		C19CB67F1FA9222700FB807E /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
+		C19CB6821FA9259900FB807E /* thViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thViewController.swift; sourceTree = "<group>"; };
 		C1B1ED091FA41DE1008083F9 /* pamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pamViewController.swift; sourceTree = "<group>"; };
 		C1B1ED0B1FA41E1C008083F9 /* activityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activityViewController.swift; sourceTree = "<group>"; };
 		C1B1ED0D1FA41E2C008083F9 /* medicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicationViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +85,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1806E321F95A41C003FC235 /* FaveButton.framework in Frameworks */,
+				C11B916C1FA91D32001DFB50 /* JTAppleCalendar.framework in Frameworks */,
+				C15C69171FAA568300F7A741 /* Charts.framework in Frameworks */,
 				C1806E361F95A41C003FC235 /* ZLSwipeableViewSwift.framework in Frameworks */,
 				C1806E341F95A41C003FC235 /* SnapKit.framework in Frameworks */,
 			);
@@ -83,6 +98,9 @@
 		C1755D141F959EB1002DE747 = {
 			isa = PBXGroup;
 			children = (
+				C19CB67F1FA9222700FB807E /* Charts.framework */,
+				C15C69161FAA568300F7A741 /* Charts.framework */,
+				C11B916B1FA91D32001DFB50 /* JTAppleCalendar.framework */,
 				C1806E2F1F95A41C003FC235 /* FaveButton.framework */,
 				C1806E301F95A41C003FC235 /* SnapKit.framework */,
 				C1806E311F95A41C003FC235 /* ZLSwipeableViewSwift.framework */,
@@ -116,6 +134,8 @@
 				C1B1ED0D1FA41E2C008083F9 /* medicationViewController.swift */,
 				C12E7C721FA65450007A81BB /* calendarViewController.swift */,
 				C12E7C741FA654BF007A81BB /* trendsViewController.swift */,
+				C19CB6821FA9259900FB807E /* thViewController.swift */,
+				C1610E551FAF94A900FD7D30 /* CustomCell.swift */,
 			);
 			path = patient;
 			sourceTree = "<group>";
@@ -205,6 +225,8 @@
 			files = (
 				C12E7C731FA65450007A81BB /* calendarViewController.swift in Sources */,
 				C1B1ED0E1FA41E2C008083F9 /* medicationViewController.swift in Sources */,
+				C1610E561FAF94A900FD7D30 /* CustomCell.swift in Sources */,
+				C19CB6831FA9259900FB807E /* thViewController.swift in Sources */,
 				C1755D231F959EB1002DE747 /* WelcomeViewController.swift in Sources */,
 				C1B1ED0C1FA41E1C008083F9 /* activityViewController.swift in Sources */,
 				C1806E3A1F95AB7B003FC235 /* todayViewController.swift in Sources */,

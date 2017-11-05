@@ -1,3 +1,5 @@
 github "SnapKit/SnapKit" ~> 4.0.0
 github "zhxnlai/ZLSwipeableViewSwift"
 github "xhamr/fave-button"
+github "patchthecode/JTAppleCalendar" ~> 7.0
+github "danielgindi/Charts" == 3.0.4
