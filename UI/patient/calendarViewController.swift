@@ -24,19 +24,13 @@ class calendarViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func gotosecond(_ sender: UIButton) {
-    }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if(segue.identifier=="calendarback"){
+            if let tabVC = segue.destination as? UITabBarController{
+                tabVC.selectedIndex=1
+            }
+        }
     }
-    */
-
 }
 extension calendarViewController: JTAppleCalendarViewDelegate,JTAppleCalendarViewDataSource{
     func calendar(_ calendar: JTAppleCalendarView, willDisplay cell: JTAppleCell, forItemAt date: Date, cellState: CellState, indexPath: IndexPath) {
@@ -68,6 +62,7 @@ extension calendarViewController: JTAppleCalendarViewDelegate,JTAppleCalendarVie
             cell.dateLabel.textColor = UIColor.gray
             cell.backgroundColor = UIColor.white
         }
+        cell.layer.cornerRadius=20
         cell.dateLabel.text = cellState.text
         return cell
     }

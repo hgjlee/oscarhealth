@@ -9,7 +9,7 @@
 import UIKit
 
 class pamViewController: UIViewController {
-
+    @IBOutlet weak var moodtag: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,11 +17,17 @@ class pamViewController: UIViewController {
     }
 
     @IBAction func pamselected(_ sender: UIButton){
-        print(String(sender.tag))
+        moodtag.text = String(sender.tag)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "pamback"){
+            let destination = segue.destination as! thViewController
+            destination.labeltext = moodtag.text
+        }
     }
     
 

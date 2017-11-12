@@ -10,22 +10,28 @@ import UIKit
 import Charts
 
 class trendsViewController: UIViewController {
-
+    
+    
     @IBOutlet weak var datebg: UIView!
     
     @IBOutlet weak var lineChartView: LineChartView!
     @IBOutlet weak var line2ChartView: LineChartView!
     @IBOutlet weak var line3ChartView: LineChartView!
     override func viewDidLoad() {
-        
-        
         super.viewDidLoad()
         datebg.backgroundColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
         setChart()
         // Do any additional setup after loading the view.
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier=="trendsback"){
+            if let tabVC = segue.destination as? UITabBarController{
+                tabVC.selectedIndex=1
+            }
+        }
+    }
     func setChart() {
-        let data = [5.0, 4.0, 6.0, 7.0, 12.0, 16.0, 3.0,5.0, 4.0, 6.0, 7.0, 12.0, 16.0, 3.0,5.0, 4.0, 6.0, 7.0, 12.0, 16.0, 3.0,5.0, 4.0, 6.0, 7.0, 12.0, 16.0, 3.0]
+        let data = [7.0, 3.0, 6.0, 7.0, 7.0, 3.0, 7.0,14.0, 1.0, 8.0, 14.0, 2.0, 7.0, 14.0,7.0, 7.0, 12.0, 7.0, 7.0, 7.0, 6.0,9.0, 13.0, 12.0, 11.0, 15.0, 7.0, 10.0]
         var dataEntries: [ChartDataEntry] = []
         for i in 0..<data.count {
             let dataEntry = ChartDataEntry(x: Double(i), y: data[i])
@@ -42,7 +48,7 @@ class trendsViewController: UIViewController {
         lineChartView.chartDescription?.text=""
         
         
-        let data2 = [5.0, 4.0, 5.0, 4.0, 6.0, 7.0, 3.3, 6.0, 7.0, 9.0, 12.0, 3.0, 5.5, 3.0,5.0, 4.0, 6.0, 7.0, 12.0, 10.3, 3.0,5.0, 4.0, 6.0, 7.0, 11.2, 7.9, 3.0]
+        let data2 = [6.28,6.03,6.46,6.56,6.58,6.05,6.02,6.12,5.72,6.72,6.71,6.4,6.49,6.28,6.5,6.43,7.46,7.05,7.35,7.31,6.21,5.63,5.66,7.17,7.27,5.42,6.65,10.94]
         var dataEntries2: [ChartDataEntry] = []
         for i in 0..<data2.count {
             let dataEntry2 = ChartDataEntry(x: Double(i), y: data2[i])
@@ -58,7 +64,7 @@ class trendsViewController: UIViewController {
         line2ChartView.xAxis.labelPosition = XAxis.LabelPosition.bottom
         line2ChartView.chartDescription?.text=""
         
-        let data3 = [5.0, 4.0, 5.0, 7.0, 3.3, 6.0, 7.0, 9.0, 12.0, 3.0, 5.5, 3.0,5.0, 4.0, 6.0, 7.0, 12.0, 10.3, 3.0,5.0, 4.0, 6.0, 7.0, 11.2,4.0, 6.0, 7.9, 3.0]
+        let data3 = [10.401,6.73,10.621,7.867,9.367,9.798,10.764,8.388,8.213,8.832,10.586,11.117,10.881,10.423,10.677,7.745,10.732,10.684,11.247,7.289,9.015,9.741,11.4,10.156,10.845,9.819,9.11,8.075]
         var dataEntries3: [ChartDataEntry] = []
         for i in 0..<data3.count {
             let dataEntry3 = ChartDataEntry(x: Double(i), y: data3[i]*1000)
